@@ -16,7 +16,7 @@ class DetailsScreen extends StatelessWidget {
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
             colors: [
-              Color.fromARGB(255, 70, 69, 69),
+              Color.fromARGB(255, 80, 79, 79),
               Color.fromARGB(231, 24, 10, 4),
             ],
           ),
@@ -120,6 +120,30 @@ class DetailsScreen extends StatelessWidget {
                               Divider(
                                 color: Colors.white,
                                 thickness: 0.1,
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text(
+                                        "Ingredients",
+                                        style: TextStyle(
+                                          color: Colors.white70,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 8,
+                                        ),
+                                      ),
+                                      Icon(
+                                        Icons.energy_savings_leaf_outlined,
+                                        color: Colors.white,
+                                        size: 16,
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               )
                             ],
                           ),
