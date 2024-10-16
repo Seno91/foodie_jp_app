@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_jp_app/homepage.dart';
+import 'package:foodie_jp_app/features/start/presentation/start_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyWidget(),
+      home: StartPage(),
       debugShowCheckedModeBanner: false,
     );
   }
