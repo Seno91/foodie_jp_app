@@ -24,6 +24,7 @@ class StartPage extends StatelessWidget {
               ),
             ),
           ),
+          //pagecontent
           Positioned(
             top: 100,
             left: 0.1,
@@ -53,13 +54,13 @@ class StartPage extends StatelessWidget {
                   width: 340,
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.03),
-                    borderRadius: BorderRadius.circular(20),
+                    //borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Padding(
                     padding: EdgeInsets.only(
                       top: 40,
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         Text(
                           "Feeling Snackish Today?",
