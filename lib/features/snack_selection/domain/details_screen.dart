@@ -50,7 +50,7 @@ class DetailsScreen extends StatelessWidget {
                         border: Border.all(color: Colors.white12),
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      height: 320,
+                      height: 360,
                       child: const Padding(
                         padding: EdgeInsets.fromLTRB(24, 8, 24, 8),
                         child: Center(
@@ -124,31 +124,144 @@ class DetailsScreen extends StatelessWidget {
                               SizedBox(
                                 height: 16,
                               ),
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  bottom: 10,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "Ingredients",
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 11,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 75,
+                                    ),
+                                    Text(
+                                      "Reviews",
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 11,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
                               Row(
                                 children: [
-                                  Column(
-                                    children: [
-                                      Text(
-                                        "Ingredients",
-                                        style: TextStyle(
-                                          color: Colors.white70,
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 8,
-                                        ),
-                                      ),
-                                      Icon(
-                                        Icons.energy_savings_leaf_outlined,
-                                        color: Colors.white,
-                                        size: 16,
-                                      ),
-                                    ],
+                                  Icon(
+                                    Icons.filter_drama_outlined,
+                                    size: 20,
+                                    color: Colors.white70,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Icon(
+                                    Icons.favorite_border,
+                                    size: 20,
+                                    color: Colors.white70,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Icon(
+                                    Icons.sports_martial_arts_outlined,
+                                    size: 20,
+                                    color: Colors.white70,
+                                  ),
+                                  SizedBox(
+                                    width: 2,
+                                  ),
+                                  Icon(
+                                    Icons.yard_outlined,
+                                    size: 20,
+                                    color: Colors.white70,
+                                  ),
+                                  SizedBox(
+                                    width: 50,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Icon(
+                                    Icons.star,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Icon(
+                                    Icons.star_border_outlined,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    "4.0",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ],
-                              )
+                              ),
                             ],
                           ),
                         ),
                       ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 620,
+              left: 75,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color.fromARGB(255, 226, 115, 152),
+                      spreadRadius: 5,
+                      blurRadius: 15,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                  gradient: const LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: [
+                      Color.fromARGB(255, 255, 112, 160),
+                      Color.fromARGB(255, 255, 149, 230)
+                    ],
+                  ),
+                ),
+                width: 250,
+                height: 50,
+                child: const Center(
+                  child: Text(
+                    "Add to order for 8.99",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
                     ),
                   ),
                 ),

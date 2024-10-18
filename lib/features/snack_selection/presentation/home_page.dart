@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
             cardImagePath: "assets/images/details/Top Card.png",
             burgerImagePath: "assets/images/graphs/Burger_3D.png",
             title: "Angi's yummy burger",
-            subtitle: "Delish vegan burger\nthat tastes like heaven",
+            subtitle: "Delish Big BEEF burger\nthat tastes like heaven",
             currencyIcon: Icons.currency_yen,
             price: "13.99",
             callToActionButton: "Add to order",
